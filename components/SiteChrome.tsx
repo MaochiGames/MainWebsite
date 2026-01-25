@@ -13,9 +13,7 @@ export default function SiteChrome({ children }: SiteChromeProps) {
   const [isServicesOpen, setIsServicesOpen] = useState(false)
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme")
-    const prefersDark =
-      window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
-    const shouldUseDark = storedTheme ? storedTheme === "dark" : prefersDark
+    const shouldUseDark = storedTheme ? storedTheme === "dark" : true
 
     document.documentElement.classList.toggle("dark", shouldUseDark)
   }, [])
