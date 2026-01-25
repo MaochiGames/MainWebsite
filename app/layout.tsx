@@ -19,6 +19,12 @@ const baiJamjuree = Bai_Jamjuree({
   variable: "--font-bai-jamjuree",
 })
 
+const baiJamjureeRegular = Bai_Jamjuree({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-bai-jamjuree-regular",
+})
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,7 +32,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans ${baiJamjuree.variable} ${GeistMono.variable} antialiased`}>
+      <body
+        className={`font-sans ${baiJamjuree.variable} ${baiJamjureeRegular.variable} ${GeistMono.variable} antialiased`}
+      >
         <Suspense fallback={null}>
           <SiteChrome>{children}</SiteChrome>
         </Suspense>

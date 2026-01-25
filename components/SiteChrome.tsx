@@ -177,7 +177,7 @@ export default function SiteChrome({ children }: SiteChromeProps) {
                 </div>
               )}
               <Link href="/#ips" className="block px-3 py-2 text-foreground hover:text-primary">
-                IP&apos;S
+                ORIGINAL IPs
               </Link>
               <Link href="/contact" className="block px-3 py-2 text-foreground hover:text-primary">
                 CONTACT US
