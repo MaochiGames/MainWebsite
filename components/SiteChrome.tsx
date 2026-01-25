@@ -29,7 +29,7 @@ export default function SiteChrome({ children }: SiteChromeProps) {
                 <img
                   src="/maochi-games-logo.png"
                   alt="Maochi Games"
-                  className="w-[35vw] sm:w-[10vw] md:w-[10vw] h-auto object-contain"
+                  className="w-[35vw] sm:w-[25vw] md:w-[10vw] h-auto object-contain"
                 />
               </Link>
             </div>
