@@ -64,7 +64,7 @@ export default function SiteChrome({ children }: SiteChromeProps) {
                     SERVICES
                     <ChevronDown size={14} className="text-foreground/70 group-hover:text-primary" />
                   </button>
-                  <div className="absolute left-0 top-full w-64 pt-2 opacity-0 pointer-events-none transition-opacity duration-150 group-hover:opacity-100 group-hover:pointer-events-auto">
+                  <div className="absolute left-0 top-full w-74 pt-2 opacity-0 pointer-events-none transition-opacity duration-150 group-hover:opacity-100 group-hover:pointer-events-auto">
                     <div className="rounded-md border border-border/60 bg-black/70 backdrop-blur-md shadow-lg py-1">
                       <Link
                         href="/#ui-ux-design"
@@ -83,6 +83,12 @@ export default function SiteChrome({ children }: SiteChromeProps) {
                         className="block px-4 py-[0.6rem] text-left text-sm text-foreground/80 hover:text-red-500 hover:bg-muted/60 active:bg-muted/80 active:text-red-500 cursor-pointer"
                       >
                         GAME DEVELOPMENT
+                      </Link>
+                      <Link
+                          href="/#web-application-development"
+                          className="block px-4 py-[0.6rem] text-left text-sm text-foreground/80 hover:text-red-500 hover:bg-muted/60 active:bg-muted/80 active:text-red-500 cursor-pointer"
+                      >
+                        WEB & APPLICATION DEVELOPMENT
                       </Link>
                       <Link
                         href="/#cgi-video-production"
@@ -165,6 +171,12 @@ export default function SiteChrome({ children }: SiteChromeProps) {
                   </Link>
                   <Link href="/#game-development" className="block px-6 py-2 text-foreground hover:text-primary">
                     GAME DEVELOPMENT
+                  </Link>
+                  <Link
+                      href="/#web-application-development"
+                      className="block px-6 py-2 text-foreground hover:text-primary"
+                  >
+                    WEB & APPLICATION DEVELOPMENT
                   </Link>
                   <Link
                     href="/#cgi-video-production"
