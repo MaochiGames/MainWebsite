@@ -1,6 +1,27 @@
 "use client"
 
+import { useFormState, useFormStatus } from "react-dom"
+import { sendContactEmail } from "./api/contactroute"
+
+const initialState = { status: "idle" as const, message: "" }
+
+function SubmitButton() {
+  const { pending } = useFormStatus()
+
+  return (
+    <button
+      type="submit"
+      className="w-full h-12 sm:h-14 bg-primary text-primary-foreground font-semibold tracking-wide uppercase transition-colors hover:bg-primary/90 disabled:opacity-70"
+      disabled={pending}
+    >
+      {pending ? "Sending..." : "Let's Talk"}
+    </button>
+  )
+}
+
 export default function ContactPage() {
+  const [state, formAction] = useFormState(sendContactEmail, initialState)
+
   return (
     <main className="min-h-screen bg-background text-foreground px-4 sm:px-6 lg:px-8 py-20 flex items-center justify-center">
       <div className="w-full max-w-xl md:max-w-[50rem]">
@@ -9,7 +30,7 @@ export default function ContactPage() {
           <p className="text-left text-base sm:text-lg font-sans-regular font-light pb-[5svh] text-white/70 mb-6">
             Let&apos;s make something cool together
           </p>
-          <form className="space-y-5" name="contact" method="post">
+          <form className="space-y-5" name="contact" action={formAction}>
             <div className="space-y-2">
               <label htmlFor="name" className="text-sm sm:text-base font-medium">
                 Name *
@@ -45,12 +66,18 @@ export default function ContactPage() {
                 className="w-full min-h-[140px] rounded-md border border-border bg-background px-4 py-3 text-base outline-none focus:border-primary focus:ring-2 focus:ring-primary/30"
               />
             </div>
-            <button
-              type="submit"
-              className="w-full h-12 sm:h-14 bg-primary text-primary-foreground font-semibold tracking-wide uppercase transition-colors hover:bg-primary/90"
-            >
-              Let&apos;s Talk
-            </button>
+            {state.status !== "idle" ? (
+              <p
+                className={`text-sm ${
+                  state.status === "success" ? "text-emerald-400" : "text-red-400"
+                }`}
+                role="status"
+                aria-live="polite"
+              >
+                {state.message}
+              </p>
+            ) : null}
+            <SubmitButton />
           </form>
         </div>
       </div>
