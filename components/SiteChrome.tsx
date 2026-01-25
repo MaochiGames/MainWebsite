@@ -10,6 +10,7 @@ type SiteChromeProps = {
 
 export default function SiteChrome({ children }: SiteChromeProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isServicesOpen, setIsServicesOpen] = useState(false)
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme")
     const prefersDark =
@@ -132,7 +133,7 @@ export default function SiteChrome({ children }: SiteChromeProps) {
           <div className="md:hidden bg-background/95 backdrop-blur-md border-b border-border">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <Link href="/#home" className="block px-3 py-2 text-foreground hover:text-primary">
-                Home
+                HOME
               </Link>
               <Link href="/#our-team" className="block px-3 py-2 text-foreground hover:text-primary">
                 OUR TEAM
@@ -140,6 +141,41 @@ export default function SiteChrome({ children }: SiteChromeProps) {
               <Link href="/#work" className="block px-3 py-2 text-foreground hover:text-primary">
                 WORK
               </Link>
+              <button
+                type="button"
+                onClick={() => setIsServicesOpen((prev) => !prev)}
+                className="flex w-full items-center justify-between px-3 py-2 text-foreground hover:text-primary"
+                aria-expanded={isServicesOpen}
+                aria-controls="mobile-services-menu"
+              >
+                <span>SERVICES</span>
+                <ChevronDown
+                  size={16}
+                  className={`transition-transform ${isServicesOpen ? "rotate-180" : ""}`}
+                />
+              </button>
+              {isServicesOpen && (
+                <div id="mobile-services-menu" className="space-y-1 pb-1">
+                  <Link href="/#ui-ux-design" className="block px-6 py-2 text-foreground hover:text-primary">
+                    UI/UX DESIGN
+                  </Link>
+                  <Link
+                    href="/#game-asset-creation"
+                    className="block px-6 py-2 text-foreground hover:text-primary"
+                  >
+                    GAME ASSET CREATION
+                  </Link>
+                  <Link href="/#game-development" className="block px-6 py-2 text-foreground hover:text-primary">
+                    GAME DEVELOPMENT
+                  </Link>
+                  <Link
+                    href="/#cgi-video-production"
+                    className="block px-6 py-2 text-foreground hover:text-primary"
+                  >
+                    CGI & VIDEO PRODUCTION
+                  </Link>
+                </div>
+              )}
               <Link href="/#ips" className="block px-3 py-2 text-foreground hover:text-primary">
                 IP&apos;S
               </Link>
