@@ -32,6 +32,15 @@ export default function HomePage() {
     }
   }, [])
 
+  useEffect(() => {
+    const heroVideo = document.querySelector('video[autoplay]') as HTMLVideoElement
+    if (isVideoOpen && heroVideo) {
+      heroVideo.pause()
+    } else if (!isVideoOpen && heroVideo) {
+      heroVideo.play()
+    }
+  }, [isVideoOpen])
+
   return (
     <>
       {/* Hero Section */}
