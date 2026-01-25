@@ -5,12 +5,15 @@ import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import "./globals.css"
-import SiteChrome from "@/components/SiteChrome"
+import SiteChrome from "@/components/baselayout/SiteChrome"
 
 export const metadata: Metadata = {
   title: "MaochiGames",
   description: "Experience the ultimate gaming universe with cutting-edge titles and immersive worlds.",
   generator: "v0.app",
+  icons: {
+    icon: "/favicon.png",
+  },
 }
 
 const baiJamjuree = Bai_Jamjuree({
