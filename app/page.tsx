@@ -273,18 +273,29 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
             {[
-              "Studio Alpha",
-              "Crimson Forge",
-              "Neon Vale",
-              "Astral Labs",
-              "Ironwave",
-              "Nova Core",
+              { name: "Alphack Studios", logo: "" },
+              { name: "Clique Games", logo: "/Partners/Partners_CliqueGames.png" },
+              { name: "My Town Games LTD", logo: "" },
+              { name: "The Young Socratics", logo: "" },
+              { name: "Naughty Dog", logo: "" },
+              { name: "Microsoft", logo: "" },
             ].map((partner) => (
               <div
-                key={partner}
-                className="fade-in flex items-center justify-center rounded-md border border-black/10 bg-white px-4 py-6 text-sm font-semibold uppercase tracking-[0.18em] text-black"
+                key={partner.name}
+                className="fade-in flex items-center justify-center rounded-md border border-black/10 bg-white px-4 py-6 text-center text-sm font-semibold uppercase tracking-[0.18em] text-black"
               >
-                {partner}
+                {partner.logo ? (
+                  <>
+                    <img
+                      src={partner.logo}
+                      alt={partner.name}
+                      className="h-20 w-auto object-contain"
+                    />
+                    <span className="sr-only">{partner.name}</span>
+                  </>
+                ) : (
+                  partner.name
+                )}
               </div>
             ))}
           </div>
