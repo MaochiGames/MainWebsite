@@ -11,6 +11,10 @@ type SiteChromeProps = {
 export default function SiteChrome({ children }: SiteChromeProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isServicesOpen, setIsServicesOpen] = useState(false)
+  const closeMobileMenu = () => {
+    setIsMenuOpen(false)
+    setIsServicesOpen(false)
+  }
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme")
     const shouldUseDark = storedTheme ? storedTheme === "dark" : true
@@ -136,13 +140,25 @@ export default function SiteChrome({ children }: SiteChromeProps) {
         {isMenuOpen && (
           <div className="md:hidden bg-background/95 backdrop-blur-md border-b border-border">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <Link href="/#home" className="block px-3 py-2 text-foreground hover:text-primary">
+              <Link
+                href="/#home"
+                className="block px-3 py-2 text-foreground hover:text-primary"
+                onClick={closeMobileMenu}
+              >
                 HOME
               </Link>
-              <Link href="/#our-team" className="block px-3 py-2 text-foreground hover:text-primary">
+              <Link
+                href="/#our-team"
+                className="block px-3 py-2 text-foreground hover:text-primary"
+                onClick={closeMobileMenu}
+              >
                 OUR TEAM
               </Link>
-              <Link href="/#work" className="block px-3 py-2 text-foreground hover:text-primary">
+              <Link
+                href="/#work"
+                className="block px-3 py-2 text-foreground hover:text-primary"
+                onClick={closeMobileMenu}
+              >
                 WORK
               </Link>
               <button
@@ -160,36 +176,55 @@ export default function SiteChrome({ children }: SiteChromeProps) {
               </button>
               {isServicesOpen && (
                 <div id="mobile-services-menu" className="space-y-1 pb-1">
-                  <Link href="/#ui-ux-design" className="block px-6 py-2 text-foreground hover:text-primary">
+                  <Link
+                    href="/#ui-ux-design"
+                    className="block px-6 py-2 text-foreground hover:text-primary"
+                    onClick={closeMobileMenu}
+                  >
                     UI/UX DESIGN
                   </Link>
                   <Link
                     href="/#game-asset-creation"
                     className="block px-6 py-2 text-foreground hover:text-primary"
+                    onClick={closeMobileMenu}
                   >
                     GAME ASSET CREATION
                   </Link>
-                  <Link href="/#game-development" className="block px-6 py-2 text-foreground hover:text-primary">
+                  <Link
+                    href="/#game-development"
+                    className="block px-6 py-2 text-foreground hover:text-primary"
+                    onClick={closeMobileMenu}
+                  >
                     GAME DEVELOPMENT
                   </Link>
                   <Link
-                      href="/#web-application-development"
-                      className="block px-6 py-2 text-foreground hover:text-primary"
+                    href="/#web-application-development"
+                    className="block px-6 py-2 text-foreground hover:text-primary"
+                    onClick={closeMobileMenu}
                   >
                     WEB & APPLICATION DEVELOPMENT
                   </Link>
                   <Link
                     href="/#cgi-video-production"
                     className="block px-6 py-2 text-foreground hover:text-primary"
+                    onClick={closeMobileMenu}
                   >
                     CGI & VIDEO PRODUCTION
                   </Link>
                 </div>
               )}
-              <Link href="/#ips" className="block px-3 py-2 text-foreground hover:text-primary">
+              <Link
+                href="/#ips"
+                className="block px-3 py-2 text-foreground hover:text-primary"
+                onClick={closeMobileMenu}
+              >
                 ORIGINAL IPs
               </Link>
-              <Link href="/contact" className="block px-3 py-2 text-foreground hover:text-primary">
+              <Link
+                href="/contact"
+                className="block px-3 py-2 text-foreground hover:text-primary"
+                onClick={closeMobileMenu}
+              >
                 CONTACT US
               </Link>
             </div>
