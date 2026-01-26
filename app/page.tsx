@@ -321,7 +321,7 @@ export default function HomePage() {
             {[
               {
                 name: "CECILLE VILLENA",
-                title: "Founder / Chief Executive Officer",
+                title: "Co-Founder / Chief Executive Officer",
                 image: "/team-member-1.png",
               },
               {
@@ -331,12 +331,12 @@ export default function HomePage() {
               },
               {
                 name: "ROBERTO TAN",
-                title: "Co-Founder / Chief Technology Officer",
-                image: "/team/RobertoTan.jpg",
+                title: "Founder / Chief Technology Officer",
+                image: "/Team/RobertoTan.jpg",
               },
               {
                 name: "JOHN LEO RUIN",
-                title: "Creative Director",
+                title: "Co-Founder / Creative Director",
                 image: "/team-member-4.png",
               },
             ].map((member) => (
