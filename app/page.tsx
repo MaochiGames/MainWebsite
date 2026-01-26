@@ -262,6 +262,35 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* We Worked With */}
+      <section id="we-worked-with" className="py-20 px-4 bg-white text-black">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12 fade-in">
+            <h2 className="text-5xl font-bold mb-4 text-balance">We Worked With</h2>
+            <p className="text-xl text-black/70 max-w-2xl mx-auto text-pretty">
+              Trusted by studios and teams across games, entertainment, and technology.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+            {[
+              "Studio Alpha",
+              "Crimson Forge",
+              "Neon Vale",
+              "Astral Labs",
+              "Ironwave",
+              "Nova Core",
+            ].map((partner) => (
+              <div
+                key={partner}
+                className="fade-in flex items-center justify-center rounded-md border border-black/10 bg-white px-4 py-6 text-sm font-semibold uppercase tracking-[0.18em] text-black"
+              >
+                {partner}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Announcement Banner */}
       <section className="relative py-20 overflow-hidden hidden">
         <div
@@ -291,7 +320,7 @@ export default function HomePage() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 hidden">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 fade-in">
             <h2 className="text-5xl font-bold mb-4 text-balance">Why Choose Nexus</h2>
@@ -331,7 +360,7 @@ export default function HomePage() {
       </section>
 
       {/* Careers Section */}
-      <section id="careers" className="relative py-20 overflow-hidden">
+      <section id="careers" className="relative py-20 overflow-hidden hidden">
         <div
           className="absolute inset-0"
           style={{
