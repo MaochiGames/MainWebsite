@@ -262,7 +262,31 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* We Worked With */}
+    {/* Vision & Mission */}
+    <section id="vision-mission" className="bg-neutral-900 py-20 px-4 text-white font-solemn">
+        <div className="max-w-7xl mx-auto">
+            <div className="ml-auto max-w-2xl">
+                <div className="space-y-12">
+                    <div className="fade-in text-left">
+                        <h3 className="text-4xl sm:text-5xl font-semibold mb-4">OUR MISSION</h3>
+                        <p className="text-lg sm:text-xl text-white/90 leading-relaxed">
+                            To fuse world-class engineering with high-concept artistry to build digital products that offer true
+                            ownership, mechanical depth, and unparalleled visual fidelity.
+                        </p>
+                    </div>
+                    <div className="fade-in text-left">
+                        <h3 className="text-4xl sm:text-5xl font-semibold mb-4">OUR VISION</h3>
+                        <p className="text-lg sm:text-xl text-white/90 leading-relaxed">
+                            To become the primary architectural bridge between traditional high-end entertainment and the
+                            decentralized future.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        {/* We've Worked With */}
       <section id="we-worked-with" className="py-20 px-4 bg-white text-black">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 fade-in">
@@ -307,7 +331,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
+        
       {/* Our Team */}
       <section id="our-team" className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
@@ -359,42 +383,6 @@ export default function HomePage() {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Vision & Mission */}
-      <section id="vision-mission" className="bg-neutral-900 py-20 px-4 text-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="space-y-12">
-            <div className="fade-in text-center">
-              <h3 className="text-4xl sm:text-5xl font-semibold mb-4">Our Vision</h3>
-              <p className="mx-auto max-w-4xl text-lg sm:text-xl text-white/90 leading-relaxed">
-                To become the primary architectural bridge between traditional high-end entertainment and the
-                decentralized future.
-              </p>
-              {/*<div*/}
-              {/*  className="mt-6 h-6 w-full rounded-sm border border-cyan-300/40"*/}
-              {/*  style={{*/}
-              {/*    backgroundImage:*/}
-              {/*      "repeating-linear-gradient(-45deg, rgba(14,165,233,0.65) 0 2px, rgba(14,165,233,0.1) 2px 6px)",*/}
-              {/*  }}*/}
-              {/*/>*/}
-            </div>
-            <div className="fade-in text-center">
-              <h3 className="text-4xl sm:text-5xl font-semibold mb-4">Our Mission</h3>
-              <p className="mx-auto max-w-4xl text-lg sm:text-xl text-white/90 leading-relaxed">
-                To fuse world-class engineering with high-concept artistry to build digital products that offer true
-                ownership, mechanical depth, and unparalleled visual fidelity.
-              </p>
-              {/*<div*/}
-              {/*  className="mt-6 h-6 w-full rounded-sm border border-cyan-300/40"*/}
-              {/*  style={{*/}
-              {/*    backgroundImage:*/}
-              {/*      "repeating-linear-gradient(-45deg, rgba(14,165,233,0.65) 0 2px, rgba(14,165,233,0.1) 2px 6px)",*/}
-              {/*  }}*/}
-              {/*/>*/}
-            </div>
           </div>
         </div>
       </section>
