@@ -266,9 +266,9 @@ export default function HomePage() {
       <section id="we-worked-with" className="py-20 px-4 bg-white text-black">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 fade-in">
-            <h2 className="text-5xl font-bold mb-4 text-balance">We Worked With</h2>
+            <h2 className="text-5xl font-bold mb-4 text-balance">We've Worked With</h2>
             <p className="text-xl text-black/70 max-w-2xl mx-auto text-pretty">
-              Trusted by studios and teams across games, entertainment, and technology.
+                Trusted by studios and teams across games, entertainment, and technology.
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
@@ -282,6 +282,9 @@ export default function HomePage() {
               { name: "Shirogumi", logo: "/Partners/Partners_ShiroGumi.png" },
               { name: "Gungho", logo: "/Partners/Partners_Gungho.png" },
               { name: "Robot", logo: "/Partners/Partners_Robot.png" },
+              { name: "Globe", logo: "/Partners/Partners_Globe.png" },
+              { name: "Neeuro", logo: "/Partners/Partners_Neeuro.png" },
+              { name: "Toei", logo: "/Partners/Partners_Toei.png" },
             ].map((partner) => (
               <div
                 key={partner.name}
@@ -299,6 +302,61 @@ export default function HomePage() {
                 ) : (
                   partner.name
                 )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Our Team */}
+      <section id="our-team" className="py-20 px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12 fade-in">
+            <h2 className="text-5xl font-bold mb-4 text-balance">Our Team</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
+              Meet the people shaping our games and experiences.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                name: "CECILLE VILLENA",
+                title: "Founder / Chief Executive Officer",
+                image: "/team-member-1.png",
+              },
+              {
+                name: "JACKIE VICENTE",
+                title: "Co-Founder / Chief Operations Officer",
+                image: "/team-member-2.png",
+              },
+              {
+                name: "ROBERTO TAN",
+                title: "Co-Founder / Chief Technology Officer",
+                image: "/team/RobertoTan.jpg",
+              },
+              {
+                name: "JOHN LEO RUIN",
+                title: "Creative Director",
+                image: "/team-member-4.png",
+              },
+            ].map((member) => (
+              <div
+                key={member.name}
+                className="fade-in flex h-full flex-col overflow-hidden rounded-2xl border border-border/60 shadow-lg shadow-black/10"
+              >
+                <div className="relative aspect-[6/5.5] w-full overflow-hidden">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="h-full w-full object-cover"
+                  />
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-4 text-left">
+                    <p className="text-lg font-semibold text-white">{member.name}</p>
+                    <p className="mt-1 text-xs uppercase tracking-[0.2em] text-white/80">
+                      {member.title}
+                    </p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
