@@ -279,7 +279,9 @@ export default function HomePage() {
               { name: "The Young Socratics", logo: "/Partners/Partners_TheYoungSocratics.png" },
               { name: "Naughty Dog", logo: "/Partners/Partners_NaughtyDog.png" },
               { name: "Microsoft", logo: "/Partners/Partners_Microsoft.png" },
-                { name: "Microsoft", logo: "/Partners/Partners_Microsoft.png" },
+              { name: "Shirogumi", logo: "/Partners/Partners_ShiroGumi.png" },
+              { name: "Gungho", logo: "/Partners/Partners_Gungho.png" },
+              { name: "Robot", logo: "/Partners/Partners_Robot.png" },
             ].map((partner) => (
               <div
                 key={partner.name}
