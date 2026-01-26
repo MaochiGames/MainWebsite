@@ -363,6 +363,42 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Vision & Mission */}
+      <section id="vision-mission" className="bg-neutral-900 py-20 px-4 text-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="space-y-12">
+            <div className="fade-in text-center">
+              <h3 className="text-4xl sm:text-5xl font-semibold mb-4">Our Vision</h3>
+              <p className="mx-auto max-w-4xl text-lg sm:text-xl text-white/90 leading-relaxed">
+                To become the primary architectural bridge between traditional high-end entertainment and the
+                decentralized future.
+              </p>
+              {/*<div*/}
+              {/*  className="mt-6 h-6 w-full rounded-sm border border-cyan-300/40"*/}
+              {/*  style={{*/}
+              {/*    backgroundImage:*/}
+              {/*      "repeating-linear-gradient(-45deg, rgba(14,165,233,0.65) 0 2px, rgba(14,165,233,0.1) 2px 6px)",*/}
+              {/*  }}*/}
+              {/*/>*/}
+            </div>
+            <div className="fade-in text-center">
+              <h3 className="text-4xl sm:text-5xl font-semibold mb-4">Our Mission</h3>
+              <p className="mx-auto max-w-4xl text-lg sm:text-xl text-white/90 leading-relaxed">
+                To fuse world-class engineering with high-concept artistry to build digital products that offer true
+                ownership, mechanical depth, and unparalleled visual fidelity.
+              </p>
+              {/*<div*/}
+              {/*  className="mt-6 h-6 w-full rounded-sm border border-cyan-300/40"*/}
+              {/*  style={{*/}
+              {/*    backgroundImage:*/}
+              {/*      "repeating-linear-gradient(-45deg, rgba(14,165,233,0.65) 0 2px, rgba(14,165,233,0.1) 2px 6px)",*/}
+              {/*  }}*/}
+              {/*/>*/}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Announcement Banner */}
       <section className="relative py-20 overflow-hidden hidden">
         <div
