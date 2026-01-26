@@ -141,18 +141,18 @@ export default function HomePage() {
              </div>
             <div className="block portrait:hidden">
                 {/* LANDSCAPE */}
-                <div className="w-full sm:w-[50sv] md:w-[50sv] lg:w-[100sv] pl-6 sm:pl-10 md:pl-[3vh] lg:pl-[5vh] pr-6 sm:pr-8 md:pr-10 pt-8 sm:pt-[80vh] md:pt-[60vh] lg:pt-[60vh] pb-0 sm:pb-16 mb:pb-16 lg:pb-16 text-left text-white/60 our-company-text">
+                <div className="pl-6 sm:pl-10 md:pl-[10vh] lg:pl-[5vh] pr-6 sm:pr-8 md:pr-10 lg:pr-0 pt-8 sm:pt-[80vh] md:pt-[60vh] lg:pt-[60vh] text-left text-white/60 our-company-text">
                     <img
                         src="/maochi-games-logo.png"
                         alt="Maochi Games"
                         className="mb-5 w-[180px] sm:w-[150px] md:w-[150px] lg:w-[338px] h-auto object-contain"
                     />
-                    <p className="text-[12px] sm:text-[10px] md:text-[12px] lg:text-[18px] leading-relaxed pt-0 sm:pt-0 md:pt-0 lg:pt-0 pb-0 sm:pb-0 md:pb-0 lg:pb-0">
+                    <p className="text-[12px] sm:text-[10px] md:text-[12px] lg:text-[22px] leading-relaxed pt-0 sm:pt-0 md:pt-0 lg:pt-0 pb-0 sm:pb-0 md:pb-0 lg:pb-0">
                         Our studio was founded by <span className="text-white/90">John Chung</span>, a passionate technologist and blockchain enthusiast with a deep
                         love for gaming. What began as a collaboration with his close friend <span className="text-white/90">Oliver Resada</span> evolved into a strong,
                         unified vision for building exceptional games.
                     </p>
-                    <p className="mt-5 sm:mt-6 md:mt-6 lg:mt-6 text-[12px] sm:text-[10px] md:text-[12px] lg:text-[18px] leading-relaxed pt-0 sm:pt-0 md:pt-0 lg:pt-0 pb-5 sm:pb-5 md:pb-5 lg:pb-5">
+                    <p className="mt-5 sm:mt-6 md:mt-6 lg:mt-6 text-[12px] sm:text-[10px] md:text-[12px] lg:text-[22px] leading-relaxed pt-0 sm:pt-0 md:pt-0 lg:pt-0 pb-5 sm:pb-5 md:pb-5 lg:pb-5">
                         Today, the studio is powered by a diverse team of industry veterans, bringing together experience from
                         both <span className="text-white/90">AAA studios</span> and <span className="text-white/90">independent game development</span> to create innovative and immersive gaming experiences.
                     </p>
