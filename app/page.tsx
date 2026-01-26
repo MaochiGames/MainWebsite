@@ -191,7 +191,7 @@ export default function HomePage() {
       )}
 
       {/* Games Section */}
-      <section id="games" className="py-20 px-4">
+      <section id="games" className="hidden py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 fade-in">
             <h2 className="text-5xl font-bold mb-4 text-balance">Our Games</h2>
@@ -200,7 +200,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="flex gap-6 overflow-x-auto pb-6 pt-2 scroll-smooth [scrollbar-width:none] [-ms-overflow-style:none]">
             {[
               {
                 title: "Legends of Nexus",
@@ -220,10 +220,16 @@ export default function HomePage() {
                 image: "cyberpunk cityscape with neon lights and combat",
                 status: "Coming Soon",
               },
+              {
+                title: "Titan Zero Cold War",
+                description: "A 5v5 competitive mech game on VR",
+                image: "mech battle arena with pilots and holographic HUDs",
+                status: "Coming Soon",
+              },
             ].map((game, index) => (
               <Card
                 key={index}
-                className="fade-in group hover:scale-105 transition-all duration-300 bg-card border-border overflow-hidden"
+                className="fade-in group w-[80vw] sm:w-[60vw] md:w-[45vw] lg:w-[32vw] xl:w-[28vw] shrink-0 hover:scale-105 transition-all duration-300 bg-card border-border overflow-hidden"
               >
                 <div className="relative h-48 overflow-hidden">
                   <img
@@ -257,7 +263,7 @@ export default function HomePage() {
       </section>
 
       {/* Announcement Banner */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative py-20 overflow-hidden hidden">
         <div
           className="absolute inset-0 parallax"
           style={{
