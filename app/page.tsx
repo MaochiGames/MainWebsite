@@ -275,10 +275,10 @@ export default function HomePage() {
             {[
               { name: "Alphack Studios", logo: "" },
               { name: "Clique Games", logo: "/Partners/Partners_CliqueGames.png" },
-              { name: "My Town Games LTD", logo: "" },
-              { name: "The Young Socratics", logo: "" },
-              { name: "Naughty Dog", logo: "" },
-              { name: "Microsoft", logo: "" },
+              { name: "Nissin", logo: "/Partners/Partners_Nissin.png" },
+              { name: "The Young Socratics", logo: "/Partners/Partners_TheYoungSocratics.png" },
+              { name: "Naughty Dog", logo: "/Partners/Partners_NaughtyDog.png" },
+              { name: "Microsoft", logo: "/Partners/Partners_Microsoft.png" },
             ].map((partner) => (
               <div
                 key={partner.name}
