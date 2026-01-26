@@ -326,7 +326,7 @@ export default function HomePage() {
               },
               {
                 name: "JACKIE VICENTE",
-                title: "Co-Founder / Chief Operations Officer",
+                title: "Creative Producer / Chief Operations Officer",
                 image: "/Team/JaquelineVicente.png",
               },
               {
@@ -336,15 +336,15 @@ export default function HomePage() {
               },
               {
                 name: "JOHN LEO RUIN",
-                title: "Co-Founder / Creative Director",
-                image: "/Team/team-member-4.png",
+                title: "Co-Founder / VFX Director",
+                image: "/Team/JohnLeoRuin.png",
               },
             ].map((member) => (
               <div
                 key={member.name}
                 className="fade-in flex h-full flex-col overflow-hidden rounded-2xl border border-border/60 shadow-lg shadow-black/10"
               >
-                <div className="relative aspect-[6/5.5] w-full overflow-hidden">
+                <div className="relative aspect-[6/6] w-full overflow-hidden">
                   <img
                     src={member.image}
                     alt={member.name}
