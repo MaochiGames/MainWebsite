@@ -66,21 +66,21 @@ export default function HomePage() {
           {/*</p>*/}
           {/* Content intentionally minimal; CTA moved to bottom of viewport */}
         </div>
-        <div className="absolute bottom-[10vh] left-1/2 -translate-x-1/2 z-10">
-          <button
-            type="button"
-            className="group inline-flex items-stretch border border-border/60 bg-white/10 text-foreground/10 backdrop-blur-sm transition-colors hover:border-border scale-[1.25]"
-            aria-label="Showreel"
-            onClick={() => setIsVideoOpen(true)}
-          >
-            <span className="flex items-center justify-center border-r border-red-500/80 bg-red-500/75 text-red-400 w-[20%] min-w-[44px]">
-              <Play size={18} className="group-hover:text-red-300" />
-            </span>
-            <span className="flex items-center justify-center px-5 py-4 text-sm tracking-[0.125em] uppercase text-foreground/60 group-hover:text-foreground/80">
-              WATCH VIDEO
-            </span>
-          </button>
-        </div>
+        {/*<div className="absolute bottom-[10vh] left-1/2 -translate-x-1/2 z-10">*/}
+        {/*  <button*/}
+        {/*    type="button"*/}
+        {/*    className="group inline-flex items-stretch border border-border/10 bg-white/10 text-foreground/10 backdrop-blur-sm transition-colors hover:border-border scale-[1.25]"*/}
+        {/*    aria-label="Showreel"*/}
+        {/*    onClick={() => setIsVideoOpen(true)}*/}
+        {/*  >*/}
+        {/*    <span className="flex items-center justify-center border-r border-red-500/80 bg-red-500/75 text-red-400 w-[20%] min-w-[44px]">*/}
+        {/*      <Play size={18} className="group-hover:text-red-300" />*/}
+        {/*    </span>*/}
+        {/*    <span className="flex items-center justify-center px-5 py-4 text-sm tracking-[0.125em] uppercase text-foreground/60 group-hover:text-foreground/80">*/}
+        {/*      REELS*/}
+        {/*    </span>*/}
+        {/*  </button>*/}
+        {/*</div>*/}
       </section>
       {/* Our Company Section */}
         <section id="our-company" className="relative min-h-[100svh] md:h-screen flex items-center justify-center overflow-hidden">
@@ -120,22 +120,47 @@ export default function HomePage() {
             />
 
             <div className="relative z-10 flex min-h-[100svh] md:min-h-[80vh] items-end md:items-center">
-             <div className="w-full md:w-[50%] pl-6 sm:pl-10 md:pl-[10vh] pr-6 sm:pr-8 md:pr-10 pt-8 md:pt-[40vh] pb-32 sm:pb-16 mb:pb-16 text-left text-white/60 our-company-text">
-                <img
-                  src="/maochi-games-logo.png"
-                  alt="Maochi Games"
-                  className="mb-5 w-[180px] sm:w-[240px] md:w-[338px] h-auto object-contain"
-                />
-                <p className="text-[14px] sm:text-[16px] md:text-[22px] leading-relaxed pt-30 sm:pt-0">
-                Our studio was founded by <span className="text-white/90">John Chung</span>, a passionate technologist and blockchain enthusiast with a deep
-                love for gaming. What began as a collaboration with his close friend <span className="text-white/90">Oliver Resada</span> evolved into a strong,
-                unified vision for building exceptional games.
-              </p>
-              <p className="mt-5 sm:mt-6 text-[14px] sm:text-[16px] md:text-[22px] leading-relaxed pt-0 sm:pt-0">
-                Today, the studio is powered by a diverse team of industry veterans, bringing together experience from
-                both <span className="text-white/90">AAA studios</span> and <span className="text-white/90">independent game development</span> to create innovative and immersive gaming experiences.
-              </p>
+             <div className="hidden portrait:block">
+                 {/* PORTRAIT */}
+                 <div className="w-full sm:w-[50sv] md:w-[50sv] lg:w-[100sv] pl-6 sm:pl-10 md:pl-[3vh] lg:pl-[5vh] pr-6 sm:pr-8 md:pr-10 pt-8 sm:pt-0 md:pt-[60vh] lg:pt-[60vh] pb-0 sm:pb-16 mb:pb-16 lg:pb-16 text-left text-white/60 our-company-text">
+                     <img
+                         src="/maochi-games-logo.png"
+                         alt="Maochi Games"
+                         className="mb-5 w-[180px] sm:w-[100px] md:w-[338px] h-auto object-contain"
+                     />
+                     <p className="text-[12px] sm:text-[16px] md:text-[16px] lg:text-[22px] leading-relaxed pt-0 sm:pt-0 md:pt-0 lg:pt-0 pb-0 sm:pb-0 md:pb-0 lg:pb-0">
+                         Our studio was founded by <span className="text-white/90">John Chung</span>, a passionate technologist and blockchain enthusiast with a deep
+                         love for gaming. What began as a collaboration with his close friend <span className="text-white/90">Oliver Resada</span> evolved into a strong,
+                         unified vision for building exceptional games.
+                     </p>
+                     <p className="mt-5 sm:mt-6 md:mt-6 lg:mt-6 text-[12px] sm:text-[16px] md:text-[16px] lg:text-[22px] leading-relaxed pt-0 sm:pt-0 md:pt-0 lg:pt-0 pb-5 sm:pb-5 md:pb-5 lg:pb-5">
+                         Today, the studio is powered by a diverse team of industry veterans, bringing together experience from
+                         both <span className="text-white/90">AAA studios</span> and <span className="text-white/90">independent game development</span> to create innovative and immersive gaming experiences.
+                     </p>
+                 </div>
+             </div>
+            <div className="block portrait:hidden">
+                {/* LANDSCAPE */}
+                <div className="w-full sm:w-[50sv] md:w-[50sv] lg:w-[100sv] pl-6 sm:pl-10 md:pl-[3vh] lg:pl-[5vh] pr-6 sm:pr-8 md:pr-10 pt-8 sm:pt-[80vh] md:pt-[60vh] lg:pt-[60vh] pb-0 sm:pb-16 mb:pb-16 lg:pb-16 text-left text-white/60 our-company-text">
+                    <img
+                        src="/maochi-games-logo.png"
+                        alt="Maochi Games"
+                        className="mb-5 w-[180px] sm:w-[150px] md:w-[150px] lg:w-[338px] h-auto object-contain"
+                    />
+                    <p className="text-[12px] sm:text-[10px] md:text-[12px] lg:text-[18px] leading-relaxed pt-0 sm:pt-0 md:pt-0 lg:pt-0 pb-0 sm:pb-0 md:pb-0 lg:pb-0">
+                        Our studio was founded by <span className="text-white/90">John Chung</span>, a passionate technologist and blockchain enthusiast with a deep
+                        love for gaming. What began as a collaboration with his close friend <span className="text-white/90">Oliver Resada</span> evolved into a strong,
+                        unified vision for building exceptional games.
+                    </p>
+                    <p className="mt-5 sm:mt-6 md:mt-6 lg:mt-6 text-[12px] sm:text-[10px] md:text-[12px] lg:text-[18px] leading-relaxed pt-0 sm:pt-0 md:pt-0 lg:pt-0 pb-5 sm:pb-5 md:pb-5 lg:pb-5">
+                        Today, the studio is powered by a diverse team of industry veterans, bringing together experience from
+                        both <span className="text-white/90">AAA studios</span> and <span className="text-white/90">independent game development</span> to create innovative and immersive gaming experiences.
+                    </p>
+                </div>
+
+
             </div>
+                
         </div>
       </section>
       {isVideoOpen && (
