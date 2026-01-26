@@ -322,7 +322,7 @@ export default function HomePage() {
               {
                 name: "CECILLE VILLENA",
                 title: "Co-Founder / Chief Executive Officer",
-                image: "/Team/team-member-1.png",
+                image: "/Team/CecilleVillena.png",
               },
               {
                 name: "JACKIE VICENTE",
