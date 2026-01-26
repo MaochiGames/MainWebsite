@@ -336,7 +336,7 @@ export default function HomePage() {
       <section id="our-team" className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 fade-in">
-            <h2 className="text-5xl font-bold mb-4 text-balance">Our Team</h2>
+            <h2 className="text-5xl font-bold mb-4 text-balance">OUR TEAM</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
               Meet the people shaping our games and experiences.
             </p>
