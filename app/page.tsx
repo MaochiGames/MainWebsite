@@ -263,23 +263,40 @@ export default function HomePage() {
       </section>
 
     {/* Vision & Mission */}
-    <section id="vision-mission" className="bg-neutral-900 py-20 px-4 text-white font-solemn">
+    <section
+        id="vision-mission"
+        className="py-20 px-4 text-white font-solemn"
+        style={{
+            backgroundImage: "url('/Section_BackgroundStyle1.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+        }}
+    >
         <div className="max-w-7xl mx-auto">
-            <div className="ml-auto max-w-2xl">
-                <div className="space-y-12">
-                    <div className="fade-in text-left">
-                        <h3 className="text-4xl sm:text-5xl font-semibold mb-4">OUR MISSION</h3>
-                        <p className="text-lg sm:text-xl text-white/90 leading-relaxed">
-                            To fuse world-class engineering with high-concept artistry to build digital products that offer true
-                            ownership, mechanical depth, and unparalleled visual fidelity.
-                        </p>
-                    </div>
-                    <div className="fade-in text-left">
-                        <h3 className="text-4xl sm:text-5xl font-semibold mb-4">OUR VISION</h3>
-                        <p className="text-lg sm:text-xl text-white/90 leading-relaxed">
-                            To become the primary architectural bridge between traditional high-end entertainment and the
-                            decentralized future.
-                        </p>
+            <div className="flex flex-col gap-8 md:flex-row md:items-end">
+                <div className="flex justify-center md:justify-start md:self-end md:-mt-4">
+                    <img
+                        src="/T_Rock_14.PNG"
+                        alt=""
+                        className="h-auto w-full max-w-[360px] object-contain md:h-auto md:w-auto md:max-h-[520px] md:max-w-[520px]"
+                    />
+                </div>
+                <div className="flex-1 md:max-w-2xl pb-20">
+                    <div className="space-y-12">
+                        <div className="fade-in text-left">
+                            <h3 className="text-4xl sm:text-5xl font-semibold mb-4">OUR MISSION</h3>
+                            <p className="text-lg sm:text-xl text-white/90 leading-relaxed">
+                                To fuse world-class engineering with high-concept artistry to build digital products that offer true
+                                ownership, mechanical depth, and unparalleled visual fidelity.
+                            </p>
+                        </div>
+                        <div className="fade-in text-left">
+                            <h3 className="text-4xl sm:text-5xl font-semibold mb-4">OUR VISION</h3>
+                            <p className="text-lg sm:text-xl text-white/90 leading-relaxed">
+                                To become the primary architectural bridge between traditional high-end entertainment and the
+                                decentralized future.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -333,15 +350,26 @@ export default function HomePage() {
       </section>
         
       {/* Our Team */}
-      <section id="our-team" className="py-20 px-4">
-        <div className="max-w-7xl mx-auto">
+      <section
+        id="our-team"
+        className="relative py-20 px-4"
+        style={{
+          backgroundImage: "url('/Section_Background_RockwellBuildings.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+        }}
+      >
+        <div className="absolute inset-0 bg-neutral-900/70" />
+        <div className="relative z-10 max-w-7xl mx-auto">
           <div className="text-center mb-12 fade-in">
             <h2 className="text-5xl font-bold mb-4 text-balance">OUR TEAM</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
               Meet the people shaping our games and experiences.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/*<div className="grid grid-cols-2 justify-items-center gap-4 sm:grid-cols-2 md:justify-items-center md:gap-6 lg:grid-cols-4 lg:justify-items-stretch">*/}
+          <div className="grid grid-cols-2 justify-items-center gap-4 sm:gap-4 sm:justify-items-center sm:grid-cols-2 md:justify-items-center md:grid-cols-4 md:gap-6 lg:grid-cols-4 lg:justify-items-stretch">
             {[
               {
                 name: "CECILLE VILLENA",
@@ -366,17 +394,17 @@ export default function HomePage() {
             ].map((member) => (
               <div
                 key={member.name}
-                className="fade-in flex h-full flex-col overflow-hidden rounded-2xl border border-border/60 shadow-lg shadow-black/10"
+                className="fade-in flex h-full w-full max-w-[160px] flex-col overflow-hidden rounded-2xl border border-border/60 shadow-lg shadow-black/10 sm:max-w-[200px] md:max-w-none"
               >
-                <div className="relative aspect-[6/6] w-full overflow-hidden">
+                <div className="relative aspect-[4/5] w-full overflow-hidden md:aspect-[6/6]">
                   <img
                     src={member.image}
                     alt={member.name}
                     className="h-full w-full object-cover"
                   />
                   <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-4 text-left">
-                    <p className="text-lg font-semibold text-white">{member.name}</p>
-                    <p className="mt-1 text-xs uppercase tracking-[0.2em] text-white/80">
+                    <p className="text-sm font-semibold text-white md:text-lg">{member.name}</p>
+                    <p className="mt-1 text-[10px] uppercase tracking-[0.18em] text-white/80 md:text-xs">
                       {member.title}
                     </p>
                   </div>

@@ -1,8 +1,8 @@
-"use client"
+﻿﻿﻿﻿﻿"use client"
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
-import { Menu, X, Twitter, Youtube, Twitch, Instagram, ChevronDown } from "lucide-react"
+import { Menu, X, ChevronDown } from "lucide-react"
 
 type SiteChromeProps = {
   children: React.ReactNode
@@ -235,84 +235,42 @@ export default function SiteChrome({ children }: SiteChromeProps) {
       {children}
 
       {/* Footer */}
-      <footer className="bg-card border-t border-border py-12">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-              <div className="text-2xl font-bold text-primary mb-4">NEXUS</div>
-              <p className="text-muted-foreground text-pretty">
-                Creating extraordinary gaming experiences that bring players together from around the world.
+      <footer className="relative overflow-hidden bg-black text-white">
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/95 to-black/40" />
+          <div className="absolute right-0 top-0 hidden h-full w-[80%] lg:block">
+            <img
+              src="/footer_side.png"
+              alt=""
+              className="h-full w-full object-cover opacity-60 transition-opacity duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/100 to-transparent" />
+          </div>
+        </div>
+
+        <div className="relative w-full px-0 py-10 pl-[5px]">
+          <div className="flex items-center gap-3 sm:gap-4 md:gap-6">
+            <div className="flex h-20 w-20 items-center justify-center bg-black/40 sm:h-24 sm:w-24 md:h-56 md:w-56">
+              <img src="/mainicon.png" alt="MaochiGames" className="h-14 w-auto sm:h-16 md:h-40" />
+            </div>
+            <div className="max-w-xl space-y-2 text-xs text-white/85 sm:text-sm">
+              <p className="text-lg font-semibold text-white sm:text-4xl md:text-4xl">MAOCHIGAMES</p>
+              {/*<p>
+                19th Floor, OMM Citra Bldg., 39 San Miguel Avenue,
+                <br />
+                Brgy. San Antonio, Pasig City, Philippines 1605
+              </p>*/}
+              <p>
+                Level 24 One Bonifacio High Street,
+                <br />
+                Bonifacio Global City, Philippines 1634
               </p>
-            </div>
-
-            <div>
-              <h3 className="font-semibold mb-4">Games</h3>
-              <ul className="space-y-2 text-muted-foreground">
-                <li>
-                  <a href="#" className="hover:text-primary transition-colors">
-                    Legends of Nexus
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary transition-colors">
-                    Shadow Realm
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary transition-colors">
-                    Cyber Strike
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="font-semibold mb-4">Company</h3>
-              <ul className="space-y-2 text-muted-foreground">
-                <li>
-                  <a href="#" className="hover:text-primary transition-colors">
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary transition-colors">
-                    Careers
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary transition-colors">
-                    Press
-                  </a>
-                </li>
-                <li>
-                  <Link href="/contact" className="hover:text-primary transition-colors">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="font-semibold mb-4">Follow Us</h3>
-              <div className="flex space-x-4">
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Twitter size={24} />
-                </a>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Youtube size={24} />
-                </a>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Twitch size={24} />
-                </a>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Instagram size={24} />
-                </a>
-              </div>
+              <p className="text-lg text-white/70">contact@maochigames.com</p>
             </div>
           </div>
 
-          <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2024 Nexus Gaming. All rights reserved.</p>
+          <div className="mt-3 ml-5 text-xs text-white/50 sm:mt-2 sm:ml-5 sm:text-base md:-mt-2 md:ml-10">
+            © 2025 MaochiGames. Philippines. All Rights Reserved.
           </div>
         </div>
       </footer>
