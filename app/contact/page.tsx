@@ -23,9 +23,28 @@ export default function ContactPage() {
   const [state, formAction] = useFormState(sendContactEmail, initialState)
 
   return (
-    <main className="min-h-screen bg-background text-foreground px-4 sm:px-6 lg:px-8 py-20 flex items-center justify-center">
+    <main className="relative min-h-screen bg-background text-foreground px-4 sm:px-6 lg:px-8 py-20 flex items-center justify-center overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-8"
+        style={{ backgroundImage: "url('/Asset3_1080.png')" }}
+        aria-hidden="true"
+      />
+      <div
+        className="absolute inset-0 opacity-25"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(255,255,255,0.12) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.12) 1px, transparent 1px)",
+          backgroundSize: "24px 24px",
+        }}
+        aria-hidden="true"
+      />
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-35"
+        style={{ backgroundImage: "url('/Diagonal_black_trans_80.png')" }}
+        aria-hidden="true"
+      />
       <div className="w-full max-w-xl md:max-w-[50rem]">
-        <div className="rounded-xl border border-border bg-card/80 backdrop-blur-sm p-6 sm:p-8 md:p-10 shadow-lg">
+        <div className="relative rounded-xl border border-border bg-card/80 backdrop-blur-sm p-6 sm:p-8 md:p-10 shadow-lg">
           <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight mb-2">GOT A PROJECT IN MIND?</h1>
           <p className="text-left text-base sm:text-lg font-sans-regular font-light pb-[5svh] text-white/70 mb-6">
             Let&apos;s make something cool together
