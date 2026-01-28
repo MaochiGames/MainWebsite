@@ -276,7 +276,7 @@ export default function HomePage() {
             <div className="flex flex-col gap-8 md:flex-row md:items-end">
                 <div className="flex justify-center md:justify-start md:self-end md:-mt-4">
                     <img
-                        src="/T_Rock_14.PNG"
+                        src="/Rock_Display.png"
                         alt=""
                         className="h-auto w-full max-w-[360px] object-contain md:h-auto md:w-auto md:max-h-[520px] md:max-w-[520px]"
                     />
