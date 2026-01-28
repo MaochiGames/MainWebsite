@@ -39,6 +39,14 @@ const titanZeroPlatforms = [
   { label: "Meta", image: metaPlatformImage, url: titanZeroMetaBuyNowUrl },
 ]
 
+const velocityTrailerUrl = "https://www.youtube.com/embed/RBdh2fblf1s?autoplay=1&rel=0&start=2"
+const velocityWishlistUrl = "https://help.steampowered.com/en/faqs/view/0CAD-3B4D-B874-A065"
+const velocityBuyNowUrl = ""
+
+const velocityPlatforms = [
+  { label: "Steam", image: steamPlatformImage, url: velocityBuyNowUrl },
+]
+
 const featuredGames: Game[] = [
   {
     title: "TITAN ZERO COLD WAR",
@@ -77,9 +85,9 @@ const recentReleases: Game[] = [
     title: "VELOCITY",
     availability: "Coming Soon",
     image: "/Games/Game-Velocity.png",
-    trailerUrl: defaultTrailerUrl,
-    wishlistUrl: defaultWishlistUrl,
-    platforms: defaultPlatforms,
+    trailerUrl: velocityTrailerUrl,
+    wishlistUrl: velocityWishlistUrl,
+    platforms: velocityPlatforms,
     actions: [
       { label: "Wishlist", variant: "primary" },
       { label: "Trailer", variant: "secondary" },
