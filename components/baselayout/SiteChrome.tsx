@@ -55,11 +55,11 @@ export default function SiteChrome({ children }: SiteChromeProps) {
                 </Link>
                 <Link
                   href="/#work"
-                  className="text-[14px] text-foreground hover:text-primary transition-colors duration-200 border-b-2 border-transparent hover:border-red-500 pb-1 drop-shadow-[0_2px_6px_rgba(0,0,0,0.75)]"
+                  className="hidden text-[14px] text-foreground hover:text-primary transition-colors duration-200 border-b-2 border-transparent hover:border-red-500 pb-1 drop-shadow-[0_2px_6px_rgba(0,0,0,0.75)]"
                 >
                   WORK
                 </Link>
-                <div className="relative group">
+                <div className="relative hidden group">
                   <button
                     type="button"
                     className="inline-flex items-center gap-1 text-[14px] text-foreground hover:text-primary transition-colors duration-200 border-b-2 border-transparent hover:border-red-500 pb-1 drop-shadow-[0_2px_6px_rgba(0,0,0,0.75)]"
@@ -104,10 +104,10 @@ export default function SiteChrome({ children }: SiteChromeProps) {
                   </div>
                 </div>
                 <Link
-                  href="/#ips"
+                  href="/games"
                   className="text-[14px] text-foreground hover:text-primary transition-colors duration-200 border-b-2 border-transparent hover:border-red-500 pb-1 drop-shadow-[0_2px_6px_rgba(0,0,0,0.75)]"
                 >
-                  ORIGINAL IPs
+                  GAMES
                 </Link>
                 <Link
                   href="/contact"
@@ -156,7 +156,7 @@ export default function SiteChrome({ children }: SiteChromeProps) {
               </Link>
               <Link
                 href="/#work"
-                className="block px-3 py-2 text-foreground hover:text-primary"
+                className="hidden px-3 py-2 text-foreground hover:text-primary"
                 onClick={closeMobileMenu}
               >
                 WORK
@@ -164,7 +164,7 @@ export default function SiteChrome({ children }: SiteChromeProps) {
               <button
                 type="button"
                 onClick={() => setIsServicesOpen((prev) => !prev)}
-                className="flex w-full items-center justify-between px-3 py-2 text-foreground hover:text-primary"
+                className="hidden w-full items-center justify-between px-3 py-2 text-foreground hover:text-primary"
                 aria-expanded={isServicesOpen}
                 aria-controls="mobile-services-menu"
               >
@@ -175,7 +175,7 @@ export default function SiteChrome({ children }: SiteChromeProps) {
                 />
               </button>
               {isServicesOpen && (
-                <div id="mobile-services-menu" className="space-y-1 pb-1">
+                <div id="mobile-services-menu" className="hidden space-y-1 pb-1">
                   <Link
                     href="/#ui-ux-design"
                     className="block px-6 py-2 text-foreground hover:text-primary"
@@ -214,11 +214,11 @@ export default function SiteChrome({ children }: SiteChromeProps) {
                 </div>
               )}
               <Link
-                href="/#ips"
+                href="/games"
                 className="block px-3 py-2 text-foreground hover:text-primary"
                 onClick={closeMobileMenu}
               >
-                ORIGINAL IPs
+                GAMES
               </Link>
               <Link
                 href="/contact"
@@ -269,9 +269,20 @@ export default function SiteChrome({ children }: SiteChromeProps) {
             </div>
           </div>
 
-          <div className="mt-3 ml-5 text-xs text-white/50 sm:mt-2 sm:ml-5 sm:text-base md:-mt-2 md:ml-10">
-            © 2025 MaochiGames. Philippines. All Rights Reserved.
+          <div className="mt-3 ml-5 text-xs text-white/50 sm:mt-2 sm:ml-5 sm:text-base md:-mt-2 md:ml-10 md:grid md:grid-cols-1 md:items-center">
+            <span className="md:col-start-1">© 2025 MaochiGames. Philippines. All Rights Reserved.</span>
           </div>
+
+          <div className="mt-3 flex flex-col items-center gap-2 text-center landscape:flex-col landscape:items-center sm:w-full sm:items-center md:col-start-2 md:mt-0 md:w-auto md:flex-row md:justify-center md:gap-6 md:landscape:flex-row lg:col-start-2 lg:mt-0 lg:w-auto lg:flex-row lg:justify-center lg:gap-6 lg:landscape:flex-row">
+            <Link href="/terms-of-use" className="text-white/70 hover:text-white">
+              TERMS OF USE
+            </Link>
+            <Link href="/privacy-policy" className="text-white/70 hover:text-white">
+              PRIVACY POLICY
+            </Link>
+          </div>
+          
+          
         </div>
       </footer>
     </div>
