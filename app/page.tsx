@@ -369,27 +369,27 @@ export default function HomePage() {
             </p>
           </div>
           {/*<div className="grid grid-cols-2 justify-items-center gap-4 sm:grid-cols-2 md:justify-items-center md:gap-6 lg:grid-cols-4 lg:justify-items-stretch">*/}
-          <div className="grid grid-cols-2 justify-items-center gap-4 sm:gap-4 sm:justify-items-center sm:grid-cols-2 md:justify-items-center md:grid-cols-4 md:gap-6 lg:grid-cols-4 lg:justify-items-stretch">
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(160px,200px))] justify-center justify-items-center gap-4 sm:gap-4 md:gap-6">
             {[
-              {
-                name: "CECILLE VILLENA",
-                title: "Co-Founder / Chief Executive Officer",
-                image: "/Team/CecilleVillena.png",
-              },
-              {
-                name: "JACKIE VICENTE",
-                title: "Creative Producer / Chief Operations Officer",
-                image: "/Team/JaquelineVicente.png",
-              },
+              // {
+              //   name: "CECILLE VILLENA",
+              //   title: "Co-Founder / Chief Executive Officer",
+              //   image: "/Team/CecilleVillena.png",
+              // },
+              // {
+              //   name: "JACKIE VICENTE",
+              //   title: "Creative Producer / Chief Operations Officer",
+              //   image: "/Team/JaquelineVicente.png",
+              // },
               {
                 name: "ROBERTO TAN",
-                title: "Founder / Chief Technology Officer",
-                image: "/Team/RobertoTan.jpg",
+                title: "Founder / Chief Executive Officer",
+                image: "/Team/Team-RobertoTan.jpg",
               },
               {
-                name: "JOHN LEO RUIN",
-                title: "Co-Founder / VFX Director",
-                image: "/Team/JohnLeoRuin.png",
+                name: "Nikko De Lima",
+                title: "Creative Director",
+                image: "/Team/Team-NikkoDeLima.jpg",
               },
             ].map((member) => (
               <div
