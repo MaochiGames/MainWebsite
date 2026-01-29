@@ -55,9 +55,9 @@ export default function SiteChrome({ children }: SiteChromeProps) {
                 </Link>
                 <Link
                   href="/#work"
-                  className="hidden text-[14px] text-foreground hover:text-primary transition-colors duration-200 border-b-2 border-transparent hover:border-red-500 pb-1 drop-shadow-[0_2px_6px_rgba(0,0,0,0.75)]"
+                  className="text-[14px] text-foreground hover:text-primary transition-colors duration-200 border-b-2 border-transparent hover:border-red-500 pb-1 drop-shadow-[0_2px_6px_rgba(0,0,0,0.75)]"
                 >
-                  WORK
+                  PROJECTS
                 </Link>
                 <div className="relative hidden group">
                   <button
@@ -156,10 +156,10 @@ export default function SiteChrome({ children }: SiteChromeProps) {
               </Link>
               <Link
                 href="/#work"
-                className="hidden px-3 py-2 text-foreground hover:text-primary"
+                className="px-3 py-2 text-foreground hover:text-primary"
                 onClick={closeMobileMenu}
               >
-                WORK
+                PROJECTS
               </Link>
               <button
                 type="button"
@@ -260,17 +260,18 @@ export default function SiteChrome({ children }: SiteChromeProps) {
                 <br />
                 Brgy. San Antonio, Pasig City, Philippines 1605
               </p>*/}
-              <p>
-                Level 24 One Bonifacio High Street,
-                <br />
-                Bonifacio Global City, Philippines 1634
+              <p className="text-lg text-white/70">
+                {/*Level 24 One Bonifacio High Street,*/}
+                {/*<br />*/}
+                {/*Bonifacio Global City, Philippines 1634*/}
+                Tandang Sora, Quezon City, Philippines 1116
               </p>
               <p className="text-lg text-white/70">contact@maochigames.com</p>
             </div>
           </div>
 
           <div className="mt-3 ml-5 text-xs text-white/50 sm:mt-2 sm:ml-5 sm:text-base md:-mt-2 md:ml-10 md:grid md:grid-cols-1 md:items-center">
-            <span className="md:col-start-1">© 2025 MaochiGames. Philippines. All Rights Reserved.</span>
+            <span className="md:col-start-1">© 2019 MaochiGames. Philippines. All Rights Reserved.</span>
           </div>
 
           <div className="mt-3 flex flex-col items-center gap-2 text-center landscape:flex-col landscape:items-center sm:w-full sm:items-center md:col-start-2 md:mt-0 md:w-auto md:flex-row md:justify-center md:gap-6 md:landscape:flex-row lg:col-start-2 lg:mt-0 lg:w-auto lg:flex-row lg:justify-center lg:gap-6 lg:landscape:flex-row">

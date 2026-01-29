@@ -307,25 +307,28 @@ export default function HomePage() {
       <section id="we-worked-with" className="py-20 px-4 bg-white text-black">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 fade-in">
-            <h2 className="text-5xl font-bold mb-4 text-balance">We've Worked With</h2>
+            <h2 className="text-5xl font-bold mb-4 text-balance">TRUSTED BY OUR CLIENTS</h2>
             <p className="text-xl text-black/70 max-w-2xl mx-auto text-pretty">
-                Trusted by studios and teams across games, entertainment, and technology.
+                {/*Trusted by studios and teams across games, entertainment, and technology.*/}
+                We've worked with.
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
             {[
               { name: "Alphack Studios", logo: "" },
               { name: "Clique Games", logo: "/Partners/Partners_CliqueGames.png" },
-              { name: "Nissin", logo: "/Partners/Partners_Nissin.png" },
+              { name: "My Town Games", logo: "/Partners/Partners_MyTownGames.png" },
               { name: "The Young Socratics", logo: "/Partners/Partners_TheYoungSocratics.png" },
-              { name: "Naughty Dog", logo: "/Partners/Partners_NaughtyDog.png" },
-              { name: "Microsoft", logo: "/Partners/Partners_Microsoft.png" },
-              { name: "Shirogumi", logo: "/Partners/Partners_ShiroGumi.png" },
-              { name: "Gungho", logo: "/Partners/Partners_Gungho.png" },
-              { name: "Robot", logo: "/Partners/Partners_Robot.png" },
-              { name: "Globe", logo: "/Partners/Partners_Globe.png" },
-              { name: "Neeuro", logo: "/Partners/Partners_Neeuro.png" },
-              { name: "Toei", logo: "/Partners/Partners_Toei.png" },
+              { name: "metaXseed", logo: "/Partners/Partners_metaXseed.png" },
+              { name: "Tinker", logo: "/Partners/Partners_Tinker.png" },
+              // { name: "Naughty Dog", logo: "/Partners/Partners_NaughtyDog.png" },
+              // { name: "Microsoft", logo: "/Partners/Partners_Microsoft.png" },
+              // { name: "Shirogumi", logo: "/Partners/Partners_ShiroGumi.png" },
+              // { name: "Gungho", logo: "/Partners/Partners_Gungho.png" },
+              // { name: "Robot", logo: "/Partners/Partners_Robot.png" },
+              // { name: "Globe", logo: "/Partners/Partners_Globe.png" },
+              // { name: "Neeuro", logo: "/Partners/Partners_Neeuro.png" },
+              // { name: "Toei", logo: "/Partners/Partners_Toei.png" },
             ].map((partner) => (
               <div
                 key={partner.name}
