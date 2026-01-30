@@ -54,7 +54,7 @@ export default function SiteChrome({ children }: SiteChromeProps) {
                   OUR TEAM
                 </Link>
                 <Link
-                  href="/#work"
+                  href="/projects"
                   className="text-[14px] text-foreground hover:text-primary transition-colors duration-200 border-b-2 border-transparent hover:border-red-500 pb-1 drop-shadow-[0_2px_6px_rgba(0,0,0,0.75)]"
                 >
                   PROJECTS
@@ -155,7 +155,7 @@ export default function SiteChrome({ children }: SiteChromeProps) {
                 OUR TEAM
               </Link>
               <Link
-                href="/#work"
+                href="/projects"
                 className="px-3 py-2 text-foreground hover:text-primary"
                 onClick={closeMobileMenu}
               >
