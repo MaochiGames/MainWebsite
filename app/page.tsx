@@ -364,7 +364,10 @@ export default function HomePage() {
           <div className="text-center mb-12 fade-in">
             <h2 className="text-5xl font-bold mb-4 text-balance">OUR TEAM</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-              Meet the people shaping our games and experiences.
+              {/*Meet the people shaping our games and experiences.*/}
+              We are a group of seasoned creators united by a passion for game development, software engineering, and web design. 
+              Our mission is to build immersive 3D worlds and high-quality digital experiences that connect players and users with 
+              the worlds we create—whether through games, applications, or websites.
             </p>
           </div>
           {/*<div className="grid grid-cols-2 justify-items-center gap-4 sm:grid-cols-2 md:justify-items-center md:gap-6 lg:grid-cols-4 lg:justify-items-stretch">*/}
@@ -380,16 +383,16 @@ export default function HomePage() {
               //   title: "Creative Producer / Chief Operations Officer",
               //   image: "/Team/JaquelineVicente.png",
               // },
-              {
-                name: "ROBERTO TAN",
-                title: "Founder / Chief Executive Officer",
-                image: "/Team/Team-RobertoTan.jpg",
-              },
-              {
-                name: "Nikko De Lima",
-                title: "Creative Director",
-                image: "/Team/Team-NikkoDeLima.jpg",
-              },
+              // {
+              //   name: "ROBERTO TAN",
+              //   title: "Founder / Chief Executive Officer",
+              //   image: "/Team/Team-RobertoTan.jpg",
+              // },
+              // {
+              //   name: "Nikko De Lima",
+              //   title: "Creative Director",
+              //   image: "/Team/Team-NikkoDeLima.jpg",
+              // },
             ].map((member) => (
               <div
                 key={member.name}
