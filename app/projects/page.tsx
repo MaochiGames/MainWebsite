@@ -8,6 +8,30 @@ const videos = [
     url: "https://store.steampowered.com/app/558110/Odyssey__The_Story_of_Science/",
   },
   {
+    src: "/Videos/Project_OperationSatoshi.mp4",
+    title: "Operation Satoshi",
+    subtitle: "MXS Games",
+    body: "Gameplay Mechanics | Multiplayer | Level Design",
+    span: "full",
+    url: "https://www.metaxseed.io",
+  },
+  {
+    src: "/Videos/Project_ZedChampions.mp4",
+    title: "Zed Champions",
+    subtitle: "Zed",
+    body: "Gameplay Mechanics | Level Design | UI/UX",
+    span: "half",
+    url: "https://zedchampions.com",
+  },
+  {
+    src: "/Videos/Project_MyTownWorld.mp4",
+    title: "My Town World Of Games",
+    subtitle: "My Town Games Ltd",
+    body: "Gameplay Mechanics | Level Design",
+    span: "half",
+    url: "https://my-town.com/join-the-exciting-3d-world-of-my-town/",
+  },
+  {
     src: "/Videos/Project_Tinker.mp4",
     title: "Tinker VR",
     subtitle: "Tinker Studio",
@@ -22,14 +46,6 @@ const videos = [
     body: "Gameplay Mechanics | Multiplayer",
     span: "half",
     url: "https://store.steampowered.com/app/1481780/Dragon_Fist_VR_Kung_Fu/",
-  },
-  {
-    src: "/Videos/Project_OperationSatoshi.mp4",
-    title: "Operation Satoshi",
-    subtitle: "MXS Games",
-    body: "Gameplay Mechanics | Multiplayer | Level Design",
-    span: "full",
-    url: "https://www.metaxseed.io",
   },
 ]
 
