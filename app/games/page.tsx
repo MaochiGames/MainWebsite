@@ -39,8 +39,8 @@ const titanZeroPlatforms = [
   { label: "Meta", image: metaPlatformImage, url: titanZeroMetaBuyNowUrl },
 ]
 
-const velocityTrailerUrl = "https://www.youtube.com/embed/RBdh2fblf1s?autoplay=1&rel=0&start=2"
-const velocityWishlistUrl = "https://help.steampowered.com/en/faqs/view/0CAD-3B4D-B874-A065"
+const velocityTrailerUrl = "" // https://www.youtube.com/embed/4Bq05ZU1PiM?autoplay=1&rel=0&start=2
+const velocityWishlistUrl = ""
 const velocityBuyNowUrl = ""
 
 const velocityPlatforms = [
@@ -83,14 +83,14 @@ const featuredGames: Game[] = [
 const recentReleases: Game[] = [
   {
     title: "VELOCITY",
-    availability: "Coming Soon",
+    availability: "A Web 3.0 Automated Racing Game",
     image: "/Games/Game-Velocity.png",
     trailerUrl: velocityTrailerUrl,
     wishlistUrl: velocityWishlistUrl,
     platforms: velocityPlatforms,
     actions: [
-      { label: "Wishlist", variant: "primary" },
-      { label: "Trailer", variant: "secondary" },
+      // { label: "Wishlist", variant: "primary" },
+      // { label: "Trailer", variant: "secondary" },
     ],
   },
   // {
