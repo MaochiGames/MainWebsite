@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Bai_Jamjuree } from "next/font/google"
+import { Bai_Jamjuree, Montserrat } from "next/font/google"
 import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
@@ -28,6 +28,12 @@ const baiJamjureeRegular = Bai_Jamjuree({
   variable: "--font-bai-jamjuree-regular",
 })
 
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "100"],
+  variable: "--font-montserrat",
+})
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -36,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`font-sans ${baiJamjuree.variable} ${baiJamjureeRegular.variable} ${GeistMono.variable} antialiased`}
+        className={`font-sans ${baiJamjuree.variable} ${baiJamjureeRegular.variable} ${montserrat.variable} ${GeistMono.variable} antialiased`}
       >
         <Suspense fallback={null}>
           <SiteChrome>{children}</SiteChrome>

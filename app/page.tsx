@@ -129,9 +129,8 @@ export default function HomePage() {
                          className="mb-5 w-[180px] sm:w-[100px] md:w-[338px] h-auto object-contain"
                      />
                      <p className="text-[12px] sm:text-[16px] md:text-[16px] lg:text-[22px] leading-relaxed pt-0 sm:pt-0 md:pt-0 lg:pt-0 pb-0 sm:pb-0 md:pb-0 lg:pb-0">
-                         Our studio was founded by <span className="text-white/90">John Chung</span>, a passionate technologist and blockchain enthusiast with a deep
-                         love for gaming. What began as a collaboration with his close friend <span className="text-white/90">Oliver Resada</span> evolved into a strong,
-                         unified vision for building exceptional games.
+                         It all began with <span className="text-white/90">Roberto Tan’s</span> deep love for technology and games, and the belief that passion could be transformed into something meaningful.
+                         That belief grew into a collaboration with <span className="text-white/90">Nikko De Lima</span>, forming a strong, unified vision dedicated to creating exceptional games that resonate with players.
                      </p>
                      <p className="mt-5 sm:mt-6 md:mt-6 lg:mt-6 text-[12px] sm:text-[16px] md:text-[16px] lg:text-[22px] leading-relaxed pt-0 sm:pt-0 md:pt-0 lg:pt-0 pb-5 sm:pb-5 md:pb-5 lg:pb-5">
                          Today, the studio is powered by a diverse team of industry veterans, bringing together experience from
@@ -148,9 +147,8 @@ export default function HomePage() {
                         className="mb-5 w-[180px] sm:w-[150px] md:w-[150px] lg:w-[338px] h-auto object-contain"
                     />
                     <p className="text-[12px] sm:text-[10px] md:text-[12px] lg:text-[22px] leading-relaxed pt-0 sm:pt-0 md:pt-0 lg:pt-0 pb-0 sm:pb-0 md:pb-0 lg:pb-0">
-                        Our studio was founded by <span className="text-white/90">John Chung</span>, a passionate technologist and blockchain enthusiast with a deep
-                        love for gaming. What began as a collaboration with his close friend <span className="text-white/90">Oliver Resada</span> evolved into a strong,
-                        unified vision for building exceptional games.
+                        It all began with <span className="text-white/90">Roberto Tan’s</span> deep love for technology and games, and the belief that passion could be transformed into something meaningful. 
+                        That belief grew into a collaboration with <span className="text-white/90">Nikko De Lima</span>, forming a strong, unified vision dedicated to creating exceptional games that resonate with players.                        
                     </p>
                     <p className="mt-5 sm:mt-6 md:mt-6 lg:mt-6 text-[12px] sm:text-[10px] md:text-[12px] lg:text-[22px] leading-relaxed pt-0 sm:pt-0 md:pt-0 lg:pt-0 pb-5 sm:pb-5 md:pb-5 lg:pb-5">
                         Today, the studio is powered by a diverse team of industry veterans, bringing together experience from
@@ -286,15 +284,13 @@ export default function HomePage() {
                         <div className="fade-in text-left">
                             <h3 className="text-4xl sm:text-5xl font-semibold mb-4">OUR MISSION</h3>
                             <p className="text-lg sm:text-xl text-white/90 leading-relaxed">
-                                To fuse world-class engineering with high-concept artistry to build digital products that offer true
-                                ownership, mechanical depth, and unparalleled visual fidelity.
+                                Our mission is to turn our passion for play into unforgettable, immersive journeys that connect us with players around the world.
                             </p>
                         </div>
                         <div className="fade-in text-left">
                             <h3 className="text-4xl sm:text-5xl font-semibold mb-4">OUR VISION</h3>
                             <p className="text-lg sm:text-xl text-white/90 leading-relaxed">
-                                To become the primary architectural bridge between traditional high-end entertainment and the
-                                decentralized future.
+                                We seek to bridge our games and our players, turning every journey into something truly memorable.
                             </p>
                         </div>
                     </div>

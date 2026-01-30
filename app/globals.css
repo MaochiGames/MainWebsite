@@ -162,8 +162,20 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   }
 
+  .header1-text {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.75);
+    font-family: "Montserrat", var(--font-montserrat), "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+
+
   .our-company-text {
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.75);
+    font-family: "Montserrat", var(--font-montserrat), "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.01em;
+    font-weight: 500;
   }
 
   @media (max-width: 932px) and (orientation: landscape) {
