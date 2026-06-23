@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Play, Users, Trophy, Zap } from "lucide-react"
@@ -8,6 +8,10 @@ import { Play, Users, Trophy, Zap } from "lucide-react"
 export default function HomePage() {
   const [scrollY, setScrollY] = useState(0)
   const [isVideoOpen, setIsVideoOpen] = useState(false)
+  const [shouldLoadHeroVideo, setShouldLoadHeroVideo] = useState(false)
+  const [isHeroVideoReady, setIsHeroVideoReady] = useState(false)
+  const [isHeroVideoFailed, setIsHeroVideoFailed] = useState(false)
+  const heroVideoRef = useRef<HTMLVideoElement | null>(null)
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY)
@@ -33,28 +37,76 @@ export default function HomePage() {
   }, [])
 
   useEffect(() => {
-    const heroVideo = document.querySelector('video[autoplay]') as HTMLVideoElement
-    if (isVideoOpen && heroVideo) {
-      heroVideo.pause()
-    } else if (!isVideoOpen && heroVideo) {
-      heroVideo.play()
+    const frame = window.requestAnimationFrame(() => {
+      setShouldLoadHeroVideo(true)
+    })
+
+    return () => window.cancelAnimationFrame(frame)
+  }, [])
+
+  useEffect(() => {
+    const heroVideo = heroVideoRef.current
+    if (!heroVideo || !shouldLoadHeroVideo || !isHeroVideoReady || isHeroVideoFailed) {
+      return
     }
-  }, [isVideoOpen])
+
+    if (isVideoOpen) {
+      heroVideo.pause()
+      return
+    }
+
+    void heroVideo.play().catch(() => {})
+  }, [isVideoOpen, isHeroVideoFailed, isHeroVideoReady, shouldLoadHeroVideo])
+
+  const handleHeroVideoReady = () => {
+    setIsHeroVideoReady(true)
+  }
+
+  const handleHeroVideoError = () => {
+    setIsHeroVideoFailed(true)
+    setIsHeroVideoReady(false)
+  }
 
   return (
     <>
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <video
-          className="absolute inset-0 h-full w-full object-cover"
-          autoPlay
-          loop
-          muted
-          playsInline
-        >
-          <source src="/Videos/HomePageVideoClips.mp4" type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+        <div className="absolute inset-0">
+          <img
+            src="/images/placeholders/Hero_Placeholder.png"
+            alt=""
+            aria-hidden="true"
+            loading="eager"
+            decoding="async"
+            fetchPriority="high"
+            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-out ${
+              isHeroVideoReady && !isHeroVideoFailed ? "opacity-0" : "opacity-100"
+            }`}
+          />
+
+          {shouldLoadHeroVideo && !isHeroVideoFailed && (
+            <video
+              ref={heroVideoRef}
+              className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-out ${
+                isHeroVideoReady && !isHeroVideoFailed ? "opacity-100" : "opacity-0"
+              }`}
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="none"
+              aria-hidden="true"
+              onLoadedData={handleHeroVideoReady}
+              onCanPlay={handleHeroVideoReady}
+              onCanPlayThrough={handleHeroVideoReady}
+              onError={handleHeroVideoError}
+            >
+              <source src="/Videos/HomePageVideoClips.mp4" type="video/mp4" />
+            </video>
+          )}
+
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+        </div>
 
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           {/*<h1 className="text-6xl md:text-8xl font-bold mb-6 hero-text text-balance">*/}
