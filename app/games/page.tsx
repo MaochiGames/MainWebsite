@@ -82,9 +82,9 @@ const featuredGames: Game[] = [
 
 const recentReleases: Game[] = [
   {
-    title: "VELOCITY",
-    availability: "A Web 3.0 Automated Racing Game",
-    image: "/Games/Game-Velocity.png",
+    title: "ILAW",
+    availability: "A first person psychological horror game",
+    image: "/Games/Game-Ilaw.jpg",
     trailerUrl: velocityTrailerUrl,
     wishlistUrl: velocityWishlistUrl,
     platforms: velocityPlatforms,
