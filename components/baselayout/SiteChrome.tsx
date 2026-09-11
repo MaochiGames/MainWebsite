@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿"use client"
+﻿"use client"
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
@@ -264,7 +264,7 @@ export default function SiteChrome({ children }: SiteChromeProps) {
                 {/*Level 24 One Bonifacio High Street,*/}
                 {/*<br />*/}
                 {/*Bonifacio Global City, Philippines 1634*/}
-                Tandang Sora, Quezon City, Philippines 1116
+                Quezon City, Philippines 1116
               </p>
               <p className="text-lg text-white/70">contact@maochigames.com</p>
             </div>
