@@ -266,7 +266,7 @@ export default function SiteChrome({ children }: SiteChromeProps) {
                 {/*Bonifacio Global City, Philippines 1634*/}
                 Quezon City, Philippines 1116
               </p>
-              <p className="text-lg text-white/70">contact@maochigames.com</p>
+              <p className="text-lg text-white/70"></p>
             </div>
           </div>
 
