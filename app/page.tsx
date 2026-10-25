@@ -73,7 +73,7 @@ export default function HomePage() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/placeholders/Hero_Placeholder.png"
+            src="/images/placeholders/Hero_Placeholder.webp"
             alt=""
             aria-hidden="true"
             loading="eager"

@@ -1,6 +1,17 @@
-const videos = [
+import { PlaceholderVideo } from "@/components/placeholder-video"
+
+const videos: {
+  src: string
+  placeholder?: string
+  title: string
+  subtitle: string
+  body: string
+  span: "full" | "half"
+  url: string
+}[] = [
   {
     src: "/Videos/Project_Odyssey_Science.mp4",
+    placeholder: "/images/placeholders/Project_Odyssey_Science.webp",
     title: "Odyssey The Story Of Science",
     subtitle: "The Young Socratics",
     body: "Level Design | Gameplay Mechanics",
@@ -9,6 +20,7 @@ const videos = [
   },
   {
     src: "/Videos/Project_OperationSatoshi.mp4",
+    placeholder: "/images/placeholders/Project_OperationSatoshi.webp",
     title: "Operation Satoshi",
     subtitle: "MXS Games",
     body: "Gameplay Mechanics | Multiplayer | Level Design",
@@ -17,6 +29,7 @@ const videos = [
   },
   {
     src: "/Videos/Project_ZedChampions.mp4",
+    placeholder: "/images/placeholders/Project_ZedChampions.webp",
     title: "Zed Champions",
     subtitle: "Zed",
     body: "Gameplay Mechanics | Level Design | UI/UX",
@@ -25,6 +38,7 @@ const videos = [
   },
   {
     src: "/Videos/Project_MyTownWorld.mp4",
+    placeholder: "/images/placeholders/Project_MyTownWorld.webp",
     title: "My Town World Of Games",
     subtitle: "My Town Games Ltd",
     body: "Gameplay Mechanics | Level Design",
@@ -33,6 +47,7 @@ const videos = [
   },
   {
     src: "/Videos/Project_Tinker.mp4",
+    placeholder: "/images/placeholders/Project_Tinker.webp",
     title: "Tinker VR",
     subtitle: "Tinker Studio",
     body: "Gameplay Mechanics | Multiplayer | Level Design",
@@ -41,6 +56,7 @@ const videos = [
   },
   {
     src: "/Videos/Project_DragonFistVR.mp4",
+    placeholder: "/images/placeholders/Project_DragonFistVR.webp",
     title: "Dragon Fist VR",
     subtitle: "Ben Olding Games",
     body: "Gameplay Mechanics | Multiplayer",
@@ -71,15 +87,11 @@ export default function ProjectsPage() {
                 video.span === "full" ? "sm:col-span-2" : "sm:col-span-1"
               }`}
             >
-              <video
+              <PlaceholderVideo
+                src={video.src}
+                placeholder={video.placeholder}
                 className="h-full w-full object-cover border-0 outline-none"
-                autoPlay
-                loop
-                muted
-                playsInline
-              >
-                <source src={video.src} type="video/mp4" />
-              </video>
+              />
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
               <div className="pointer-events-none absolute bottom-4 left-4 text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.75)] opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <div className="text-lg sm:text-xl md:text-2xl font-black uppercase tracking-[0.14em] client-works-heading">
