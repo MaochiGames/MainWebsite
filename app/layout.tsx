@@ -8,7 +8,7 @@ import "./globals.css"
 import SiteChrome from "@/components/baselayout/SiteChrome"
 
 export const metadata: Metadata = {
-  title: "MaochiGames",
+  title: "Labratz Studios | Indie Games",
   description: "Experience the ultimate gaming universe with cutting-edge titles and immersive worlds.",
   generator: "v0.app",
   icons: {

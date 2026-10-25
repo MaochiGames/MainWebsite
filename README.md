@@ -1,6 +1,6 @@
-# Maochi Games Website
+# Labratz Studios Website
 
-Official website for Maochi Games, built with [Next.js](https://nextjs.org/) and [React](https://react.dev/).
+Official website for Labratz Studios, built with [Next.js](https://nextjs.org/) and [React](https://react.dev/).
 
 ## Requirements
 

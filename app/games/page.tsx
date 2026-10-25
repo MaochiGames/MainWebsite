@@ -212,7 +212,7 @@ export default function GamesPage() {
                 {/*  Discover the worlds we build.*/}
                 {/*</h1>*/}
                 {/*<p className="max-w-2xl text-sm text-white/60">*/}
-                {/*  Premium titles, bold art direction, and immersive storytelling from MaochiGames.*/}
+                {/*  Premium titles, bold art direction, and immersive storytelling from LabratzStudios.*/}
                 {/*</p>*/}
               </div>
               <div className="flex items-center gap-3 text-md font-semibold uppercase tracking-[0.3em] text-white">

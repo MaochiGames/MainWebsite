@@ -32,7 +32,7 @@ export default function SiteChrome({ children }: SiteChromeProps) {
               <Link href="/" className="flex items-center">
                 <img
                   src="/maochi-games-logo.png"
-                  alt="Maochi Games"
+                  alt="Labratz Studios"
                   className="w-[35vw] sm:w-[10vw] md:w-[10vw] lg:w-[10vw] h-auto object-contain"
                 />
               </Link>
@@ -251,10 +251,10 @@ export default function SiteChrome({ children }: SiteChromeProps) {
         <div className="relative w-full px-0 py-10 pl-[5px]">
           <div className="flex items-center gap-3 sm:gap-4 md:gap-6">
             <div className="flex h-20 w-20 items-center justify-center bg-black/40 sm:h-24 sm:w-24 md:h-56 md:w-56">
-              <img src="/mainicon.png" alt="MaochiGames" className="h-14 w-auto sm:h-16 md:h-40" />
+              <img src="/mainicon.png" alt="LabratzStudios" className="h-14 w-auto sm:h-16 md:h-40" />
             </div>
             <div className="max-w-xl space-y-2 text-xs text-white/85 sm:text-sm">
-              <p className="text-lg font-semibold text-white sm:text-4xl md:text-4xl">MAOCHIGAMES</p>
+              <p className="text-lg font-semibold text-white sm:text-4xl md:text-4xl">LABRATZSTUDIOS</p>
               {/*<p>
                 19th Floor, OMM Citra Bldg., 39 San Miguel Avenue,
                 <br />
@@ -271,7 +271,7 @@ export default function SiteChrome({ children }: SiteChromeProps) {
           </div>
 
           <div className="mt-3 ml-5 text-xs text-white/50 sm:mt-2 sm:ml-5 sm:text-base md:-mt-2 md:ml-10 md:grid md:grid-cols-1 md:items-center">
-            <span className="md:col-start-1">© 2019 MaochiGames. Philippines. All Rights Reserved.</span>
+            <span className="md:col-start-1">© 2019 LabratzStudios. Philippines. All Rights Reserved.</span>
           </div>
 
           <div className="mt-3 flex flex-col items-center gap-2 text-center landscape:flex-col landscape:items-center sm:w-full sm:items-center md:col-start-2 md:mt-0 md:w-auto md:flex-row md:justify-center md:gap-6 md:landscape:flex-row lg:col-start-2 lg:mt-0 lg:w-auto lg:flex-row lg:justify-center lg:gap-6 lg:landscape:flex-row">
