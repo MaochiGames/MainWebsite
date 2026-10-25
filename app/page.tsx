@@ -177,7 +177,7 @@ export default function HomePage() {
                  <div className="w-full sm:w-[50sv] md:w-[50sv] lg:w-[100sv] pl-6 sm:pl-10 md:pl-[3vh] lg:pl-[5vh] pr-6 sm:pr-8 md:pr-10 pt-8 sm:pt-0 md:pt-[60vh] lg:pt-[60vh] pb-0 sm:pb-16 mb:pb-16 lg:pb-16 text-left text-white/60 our-company-text">
                      <img
                          src="/company-logo.png"
-                         alt="Labratz Studios"
+                         alt="Labrats Studios"
                          className="mb-5 w-[180px] sm:w-[100px] md:w-[338px] h-auto object-contain"
                      />
                      <p className="text-[12px] sm:text-[16px] md:text-[16px] lg:text-[22px] leading-relaxed pt-0 sm:pt-0 md:pt-0 lg:pt-0 pb-0 sm:pb-0 md:pb-0 lg:pb-0">
@@ -195,7 +195,7 @@ export default function HomePage() {
                 <div className="pl-6 sm:pl-10 md:pl-[10vh] lg:pl-[5vh] pr-6 sm:pr-8 md:pr-10 lg:pr-0 pt-8 sm:pt-[80vh] md:pt-[60vh] lg:pt-[60vh] text-left text-white/60 our-company-text">
                     <img
                         src="/company-logo.png"
-                        alt="Labratz Studios"
+                        alt="Labrats Studios"
                         className="mb-5 w-[180px] sm:w-[150px] md:w-[150px] lg:w-[338px] h-auto object-contain"
                     />
                     <p className="text-[12px] sm:text-[10px] md:text-[12px] lg:text-[22px] leading-relaxed pt-0 sm:pt-0 md:pt-0 lg:pt-0 pb-0 sm:pb-0 md:pb-0 lg:pb-0">

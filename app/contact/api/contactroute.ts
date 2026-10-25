@@ -54,7 +54,7 @@ export async function sendContactEmail(_prevState: FormState, formData: FormData
       from: SMTP_FROM,
       to: SMTP_TO,
       replyTo: email,
-      subject: `LabratzStudios Website Inquiry From: ${name}`,
+      subject: `Labrats Studios Website Inquiry From: ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
       html: `<p><strong>Inquirer Name:</strong> ${name}</p><p><strong>Inquirer Email:</strong> ${email}</p><p><strong>Inquirer Message:</strong></p><p>${message.replace(
         /\n/g,

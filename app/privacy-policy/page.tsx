@@ -7,7 +7,7 @@ export default function PrivacyPolicyPage() {
 
         <div className="mt-8 space-y-6 text-[16px]">
           <p>
-            LabratzStudios (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) respects your privacy
+            Labrats Studios (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) respects your privacy
             and is committed to protecting your personal information. This Privacy Policy explains how
             we collect, use, store, and disclose information about you when you access or use our
             website, mobile applications, and games (collectively, the &ldquo;Services&rdquo;).

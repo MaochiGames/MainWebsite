@@ -7,7 +7,7 @@ export default function TermsOfUsePage() {
 
         <div className="mt-8 space-y-6 text-[16px]">
           <p>
-            Welcome to LabratzStudios (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;).
+            Welcome to Labrats Studios (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;).
             These Terms of Service (&ldquo;Terms&rdquo;) govern your access to and use of our
             website, games, and related services (collectively, the &ldquo;Services&rdquo;).
           </p>
@@ -65,7 +65,7 @@ export default function TermsOfUsePage() {
               in-game messages (&ldquo;User Content&rdquo;).
             </p>
             <p>
-              By submitting User Content, you grant LabratzStudios a non-exclusive, worldwide,
+              By submitting User Content, you grant Labrats Studios a non-exclusive, worldwide,
               royalty-free license to use, display, and distribute that content in connection with
               the Services.
             </p>
@@ -93,7 +93,7 @@ export default function TermsOfUsePage() {
             <p className="font-semibold">6. Intellectual Property</p>
             <p>
               All content, games, software, graphics, logos, and designs are owned by or licensed to
-              LabratzStudios and are protected by copyright and other intellectual property laws.
+              Labrats Studios and are protected by copyright and other intellectual property laws.
             </p>
             <p>
               You may not copy, distribute, modify, or create derivative works from our Services
@@ -127,7 +127,7 @@ export default function TermsOfUsePage() {
           <div className="space-y-3">
             <p className="font-semibold">9. Limitation of Liability</p>
             <p>
-              To the maximum extent permitted by law, LabratzStudios shall not be liable for any
+              To the maximum extent permitted by law, Labrats Studios shall not be liable for any
               indirect, incidental, or consequential damages, including:
             </p>
             <ul className="list-disc space-y-1 pl-6">
@@ -142,7 +142,7 @@ export default function TermsOfUsePage() {
           <div className="space-y-3">
             <p className="font-semibold">10. Indemnification</p>
             <p>
-              You agree to defend, indemnify, and hold harmless LabratzStudios and its affiliates from
+              You agree to defend, indemnify, and hold harmless Labrats Studios and its affiliates from
               any claims, damages, or expenses arising from:
             </p>
             <ul className="list-disc space-y-1 pl-6">

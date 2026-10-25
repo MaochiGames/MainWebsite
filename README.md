@@ -1,6 +1,6 @@
-# Labratz Studios Website
+# Labrats Studios Website
 
-Official website for Labratz Studios, built with [Next.js](https://nextjs.org/) and [React](https://react.dev/).
+Official website for Labrats Studios, built with [Next.js](https://nextjs.org/) and [React](https://react.dev/).
 
 ## Requirements
 
