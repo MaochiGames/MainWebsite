@@ -177,7 +177,7 @@ export default function TermsOfUsePage() {
             <p className="font-semibold">13. Contact Us</p>
             <p>
               If you have any questions about these Terms, please contact us at
-              contact@maochigames.com
+              contact@labratzstudios.com
             </p>
           </div>
         </div>

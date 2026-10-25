@@ -120,7 +120,7 @@ export default function PrivacyPolicyPage() {
             <p className="font-semibold">Deleting Personal Data</p>
             <p>
               You may request deletion of your personal data by contacting us at
-              contact@maochigames.com
+              contact@labratzstudios.com
             </p>
             <p>
               We will verify your identity and respond to your request within 14 business days.
@@ -174,7 +174,7 @@ export default function PrivacyPolicyPage() {
             <p className="font-semibold">9. Contact Us</p>
             <p>
               If you have any questions or concerns about this Privacy Policy or our data practices,
-              please contact us at contact@maochigames.com
+              please contact us at contact@labratzstudios.com
             </p>
           </div>
         </div>
